@@ -19,11 +19,19 @@ r1.question("enter something:   ",(input)=>
     console.log("input is NULL!!!");
        getUserInput();
        return;
+    }   
+
+const fal = input.split(" ").join("");
+console.log(fal);
+
+const clean = input.replace(/[^A-Za-z0-9]/g, "")
+const nea= fal.split(clean)
+if(fal !== clean)
+    {
+console.log("This " + nea + " input is not valid");
     }
+clean.toLowerCase();
 
-
-
-const clean = input.replace(/[^A-Za-z0-9]/g, "").toLowerCase();
 const reversed = input.split("").reverse().join("");
 if(clean === reversed   )
     {
