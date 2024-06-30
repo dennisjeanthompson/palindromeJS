@@ -7,6 +7,7 @@
     <style>
         .div1
         {
+           
             height: 911px;
             display: flex;
             align-items: center;
@@ -38,6 +39,7 @@ background-color: aqua;
         }
         .div4
         {
+           
             background-color: red;
             display: flex;
             justify-content: center;
@@ -58,18 +60,34 @@ background-color: aqua;
             border-width:4px ;
 
         }
+        #bodyhole
+        {
+            margin: 0;
+        
+            margin-bottom: 0;
+            margin-bottom: 0;
+            background-color: gray;
+
+        }
+        .split
+        {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            height: 2px;
+        }
     </style>
 </head>
-<body>
-    <span class="div1" id="dis">1 
+<body id="bodyhole">
+   
+    <span class="div1" id="dis">
         <div class="div2"> 
-            2
+           
             <div class="div3">
-                3
+               
                 <div class="div4">
-                    4
+                 
                     <div class="div5">
-                        5
+                       
                         <div class="main">
                            
                             <input type="text" id="input">
@@ -82,14 +100,22 @@ background-color: aqua;
                     </div>
                 </div>
             </div>
+           
         </div>
+       
     </span>
+    <div class="split">
+        <p>col1</p> 
+        <p>col2</p>
+        <p>col3</p>
+        <p>col4</p>
+            </div>
     <script>
-        const div1 = document.getElementById("dis")
-        const div2 = document.getElementById("div2")
-        const div3 = document.getElementById("div3")
-        const div4 = document.getElementById("div4")
-        const div5 = document.getElementById("div5")
+        const div1 = document.querySelector(".div1")
+        const div2 = document.querySelector(".div2")
+        const div3 = document.querySelector(".div3")
+        const div4 = document.querySelector(".div4")
+        const div5 = document.querySelector(".div5")
       const mainDiv = document.querySelector("main");
 const button = document.getElementById("button");
 const result = document.getElementById("result");
@@ -105,24 +131,92 @@ button.addEventListener("click",()=>
 switch(numy)
 {
 case 1:
+
+
 div1.style.backgroundColor= "red";
+div2.style.backgroundColor= "blue";
+div3.style.backgroundColor= "green";
+div4.style.backgroundColor= "yellow";
+div5.style.backgroundColor= "purple";
+
+//const ong = [div1.style.backgroundColor= "red", div2.style.backgroundColor= "blue",div3.style.backgroundColor= "green",div4.style.backgroundColor= "yellow",]
+
 break
 case 2:
 
 div1.style.backgroundColor= "green";
+div2.style.backgroundColor= "red";
+div3.style.backgroundColor= "yellow";
+div4.style.backgroundColor= "gray";
+div5.style.backgroundColor= "violet";
 break
 case 3:
 
 div1.style.backgroundColor= "pink";
+div2.style.backgroundColor= "yellow";
+div3.style.backgroundColor= "brown";
+div4.style.backgroundColor= "green";
+div5.style.backgroundColor= "orange";
 break
 case 4:
 
 div1.style.backgroundColor= "yellow";
+div2.style.backgroundColor= "green";
+div3.style.backgroundColor= "purple";
+div4.style.backgroundColor= "brown";
+div5.style.backgroundColor= "red";
 break
 case 5:
 
-div1.style.backgroundColor= "blue";
+div1.style.backgroundColor= "violet";
+div2.style.backgroundColor= "orange";
+div3.style.backgroundColor= "yellow";
+div4.style.backgroundColor= "red";
+div5.style.backgroundColor= "blue";
 break
+case 6:
+
+div1.style.backgroundColor= "orange";
+div2.style.backgroundColor= "brown";
+div3.style.backgroundColor= "green";
+div4.style.backgroundColor= "aqua";
+div5.style.backgroundColor= "red";
+break
+case 7:
+
+div1.style.backgroundColor= "aqua";
+div2.style.backgroundColor= "blue";
+div3.style.backgroundColor= "pink";
+div4.style.backgroundColor= "yellow";
+div5.style.backgroundColor= "red";
+break
+case 8:
+
+div1.style.backgroundColor= "purple";
+div2.style.backgroundColor= "pink";
+div3.style.backgroundColor= "green";
+div4.style.backgroundColor= "violet";
+div5.style.backgroundColor= "blue";
+break
+case 9:
+
+div1.style.backgroundColor= "indigo";
+div2.style.backgroundColor= "velvet";
+div3.style.backgroundColor= "aqua";
+div4.style.backgroundColor= "orange";
+div5.style.backgroundColor= "blue";
+break
+case 10:
+
+div1.style.backgroundColor= "aqua";
+div2.style.backgroundColor= "blue";
+div3.style.backgroundColor= "green";
+div4.style.backgroundColor= "yellow";
+div5.style.backgroundColor= "purple";
+break
+
+
+
 }
 
 
