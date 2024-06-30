@@ -61,7 +61,7 @@ background-color: aqua;
     </style>
 </head>
 <body>
-    <span class="div1">1 
+    <span class="div1" id="dis">1 
         <div class="div2"> 
             2
             <div class="div3">
@@ -85,6 +85,11 @@ background-color: aqua;
         </div>
     </span>
     <script>
+        const div1 = document.getElementById("dis")
+        const div2 = document.getElementById("div2")
+        const div3 = document.getElementById("div3")
+        const div4 = document.getElementById("div4")
+        const div5 = document.getElementById("div5")
       const mainDiv = document.querySelector("main");
 const button = document.getElementById("button");
 const result = document.getElementById("result");
@@ -92,9 +97,35 @@ const Input= document.getElementById("input");
 const restart= document.getElementById("restart");
 button.addEventListener("click",()=>
 {
-    
-    
-   
+
+
+ let numy =  Math.floor(Math.random()*10)+1
+
+
+switch(numy)
+{
+case 1:
+div1.style.backgroundColor= "red";
+break
+case 2:
+
+div1.style.backgroundColor= "green";
+break
+case 3:
+
+div1.style.backgroundColor= "pink";
+break
+case 4:
+
+div1.style.backgroundColor= "yellow";
+break
+case 5:
+
+div1.style.backgroundColor= "blue";
+break
+}
+
+
     let input23  = Input.value.replace(/[^A-Za-z0-9]/g,"").toLowerCase()
     if(input23 === ""){alert("NULL")}
     let news = input23.split("").reverse().join("");
